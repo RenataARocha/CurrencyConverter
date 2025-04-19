@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert Pro</title>
+</head>
+
+
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="assets/video.mp4" type="video/mp4">
+    </video>
+
+
+    <img class="logo-central" src="assets/logo-central.png">
+
+
+    <div class="container">
+        <div class="descricao">
+            <i class="fas fa-exchange-alt"></i> 💱 Converta suas moedas de forma rápida e precisa. <br>
+            Confira as taxas de câmbio atualizadas em tempo real!
+        </div>
+
+
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+
+            <label>
+                Converter <b>para</b>
+                <select class="currency-select">
+                    <option value="dolar">US$ Dólar americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra esterlina</option>
+                    <option value="iene">¥ Iene Japonês</option>
+                    <option value="pesoargentino">$ Peso argentino</option>
+                    <option value="francosuico">CHF Franco suíço</option>
+                    <option value="dolarcanadense">CA$ Dólar canadense</option>
+                    <option value="dolar-australiano">A$ Dólar australiano</option>
+                    <option value="yuan">¥ Yuan</option>
+                    <option value="coroasueca">kr Coroa sueca</option>
+                    <option value="coroanorueguesa">kr Coroa norueguesa</option>
+                    <option value="coroadinamarquesa">kr Coroa dinamarquesa</option>
+                    <option value="rublorusso">₽ Rublo russo</option>
+                    <option value="pesomexicano">MX$ Peso mexicano</option>
+                    <option value="rupiaindiana">₹ Rupia indiana</option>
+                    <option value="wonsulcoreano">₩ Won sul-coreano</option>
+                    <option value="rand">R Rand sul-africano</option>
+                </select>
+            </label>
+
+
+            <label>
+                <b>Valor</b>
+                <input class="input-currency" placeholder="R$ 10.000,00" inputmode="numeric">
+            </label>
+
+
+            <button class="convert-button">Converter</button>
+            <button class="reset-button">Resetar</button>
+
+
+            <section>
+                <div class="currency-box">
+                    <img src="assets/real.png" alt="logo-moeda-a-converter">
+                    <p class="currency">Real</p>
+                    <p class="currency-value-to-convert">R$ 0,00</p>
+                </div>
+
+
+                <img class="seta-img" src="assets/seta.png" alt="seta">
+
+
+                <div class="currency-box">
+                    <img class="currency-img" src="assets/dolar.png" alt="logo-moeda-convertida">
+                    <p class="currency" id="currency-name">Dólar americano</p>
+                    <p class="currency-value">US$ 0.0</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

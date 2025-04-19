@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: brightness(50%) blur(3px);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    gap: 16px;
+}
+
+
+
+.descricao {
+    width: 100%;
+    max-width: 495px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 28px;
+    margin-top: 8px;
+}
+
+
+
+.descricao i {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+
+.logo-central {
+    position: absolute;
+    top: 24%;
+    left: 59%;
+    width: 800px;
+    height: 700px;
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.2));
+}
+
+
+
+main {
+    width: 400px;
+    background: #F4F4F4;
+    border-radius: 15px;
+    padding: 20px 24px 23px;
+    box-shadow: 0 8px 16px rgba(18, 0, 39, 0.8);
+}
+
+
+
+label {
+    color: #424242;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+select,
+input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+
+
+button {
+    background: #772FD3;
+    border-radius: 5px;
+    height: 55px;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.reset-button {
+    background: #cccccc;
+    border-radius: 5px;
+    height: 55px;
+    width: 100%;
+    border: none;
+    color: #2b2b2b;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+button:hover {
+    background-color: #5a36a8;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.reset-button:hover {
+    background-color: #bd9ffa;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.seta-img {
+    margin: 15px 0;
+}
+
+
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+
+.currency-img {
+    width: 44px;
+    height: 44px;
+}
+
+
+
+.currency-value,
+.currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+
+
+/*****************************************************************/
+
+
+
+
+@media screen and (max-width: 1280px) {
+    main {
+        width: 380px;
+        height: 650px;
+    }
+
+
+    .logo-central {
+        width: 650px;
+        height: 550px;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+    }
+
+
+    select,
+    input {
+        height: 46px;
+        margin-bottom: 18px;
+    }
+
+
+    .reset-button,
+    button {
+        height: 50px;
+    }
+
+
+    section {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .currency-img,
+    img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .seta-img {
+        width: 20px;
+        height: 30px;
+    }
+
+
+    .descricao {
+        font-size: 16px;
+    }
+}
+
+
+
+
+/*****************************************************************/
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .logo-central {
+        display: none;
+    }
+
+
+    .container {
+        position: absolute;
+        left: 25%;
+    }
+
+
+    main {
+        width: 500px;
+        height: 850px;
+    }
+
+
+    select,
+    input {
+        height: 55px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .reset-button,
+    button {
+        height: 65px;
+    }
+
+
+    section {
+        margin-top: 30px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .currency-img,
+    img {
+        width: 65px;
+        height: 65px;
+    }
+
+
+    .seta-img {
+        width: 45px;
+        height: 55px;
+    }
+
+
+    .descricao {
+        display: none;
+    }
+}
+
+
+
+/*****************************************************************/
+
+
+
+
+@media screen and (max-width: 915px) {
+    .descricao {
+        display: none;
+    }
+}
+
+
+
+
+/*****************************************************************/
+
+
+
+
+
+
+
+@media screen and (max-width: 541px) {
+    main {
+        width: 450px;
+        height: 680px;
+        padding: 20px 14px 23px 35px;
+        box-sizing: border-box;
+    }
+
+
+    select,
+    input {
+        height: 45px;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+
+    .reset-button,
+    button {
+        height: 55px;
+        width: 95%;
+    }
+
+
+    section {
+        width: 95%;
+        margin-top: 20px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .currency-img,
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+
+    .seta-img {
+        width: 20px;
+        height: 30px;
+    }
+}
+
+
+
+
+/*****************************************************************/
+
+
+
+
+
+@media screen and (max-width: 431px) {
+    main {
+        width: 380px;
+        height: 750px;
+    }
+
+
+    select,
+    input {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+
+    .reset-button,
+    button {
+        height: 58px;
+    }
+
+
+    section {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .currency-img,
+    img {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .seta-img {
+        width: 30px;
+        height: 45px;
+    }
+}
+
+
+
+
+/*****************************************************************/
+
+
+
+
+
+@media screen and (max-width: 391px) {
+    main {
+        width: 360px;
+        height: 750px;
+    }
+}
+
+
+
+/*****************************************************************/
+
+
+
+@media screen and (max-width: 376px) {
+    main {
+        width: 315px;
+        height: 630px;
+        padding: 12px 14px 23px 30px;
+        box-sizing: border-box;
+    }
+
+
+    select,
+    input {
+        height: 43px;
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+
+    .reset-button,
+    button {
+        height: 47px;
+        width: 95%;
+    }
+
+
+    section {
+        width: 95%;
+        margin-top: 18px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .currency-img,
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .seta-img {
+        width: 20px;
+        height: 30px;
+    }
+
+
+    .currency-value,
+    .currency-value-to-convert {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/*****************************************************************/
+
+
+
+
+
+@media screen and (max-width: 361px) {
+    main {
+        width: 320px;
+        height: 690px;
+        padding: 20px 14px 23px 30px;
+        box-sizing: border-box;
+    }
+
+
+    select,
+    input {
+        height: 45px;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+
+    button {
+        height: 55px;
+        width: 95%;
+    }
+
+
+    .reset-button {
+        height: 55px;
+        width: 95%;
+    }
+
+
+    section {
+        width: 95%;
+        margin-top: 20px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .currency-img,
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .seta-img {
+        width: 20px;
+        height: 30px;
+    }
+}
+
+
+/*****************************************************************/
