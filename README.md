@@ -3,7 +3,7 @@
 **Currency Converter** é um conversor de moedas online moderno, simples e responsivo. Desenvolvido para facilitar a conversão entre moedas de forma rápida e intuitiva — ideal para quem viaja, faz compras internacionais ou apenas ama números! 💸✨
 
 ## 🔗 Acesse o projeto online
-👉 https://renataarocha.github.io/Convert-Pro/
+👉 https://renataarocha.github.io/CurrencyConverter/
 
 
 Clique para ver o vídeo :
